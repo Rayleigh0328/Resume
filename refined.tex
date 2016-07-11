@@ -1,0 +1,138 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res} 
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{paralist}
+
+\newcommand{\parsp}{\vspace{-0.5\baselineskip}}
+\newcommand{\additemindent}{\addtolength{\itemindent}{1em}}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+
+\begin{document} 
+
+\name{Jingyun Bian\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name      
+
+\address{\bf ADDRESS\\201, 18 James Street\\Waterloo, ON N2J 2S9\\}
+%\address{\bf Contact\\ cell: (519) 721-7328 \\ email: rayleigh0328@gmail.com\\}
+\address{\bf CONTACT\\ Cell: (519) 721 - 7328 \\ \href{mailto:rayleigh0328@gmail.com}{rayleigh0328{\fontfamily{ptm}\selectfont @}gmail.com} \\}
+
+\begin{resume}
+
+
+%=======================================================================================
+\parsp
+\section{SUMMARY OF QUALIFICATION}
+	\begin{asparaitem}
+		\item 	Proficient in C/C$^{++}$, Java, Pascal, Python, PHP, Javascript, XML, HTML, CSS, Shell Scripting, 			Makefile, Git, Matlab.
+		\item 	Experienced with Mac OS, Windows, Linux, \LaTeX\  and Microsoft Office suite.
+		\item 	Knowledge about Information Theory and solid mathmatical background.
+		\item 	Communication and problem solving skills developed through past research and teaching experience.
+	\end{asparaitem}
+%=======================================================================================	
+
+
+%=======================================================================================
+\parsp
+\section{EDUCATION}
+	\textbf{University of Waterloo(UW), Waterloo, ON} \hfill \emph{Sep. 2014 - Now}
+	\begin{asparaitem}[$\circ$]
+		\additemindent
+		\item Master of Applied Science (Expected graduation in Sep. 2016) 
+		\item Electrical and Computer Engineering, G.P.A. 86.6/100
+		\item Concentrate on Communications and Information Systems
+		\item Supervisor: Prof. En-hui Yang
+  	\end{asparaitem}
+
+  	\vspace{-0.7\baselineskip}
+
+	\textbf{Nanjing University(NJU), Nanjing, Jiangsu, China} \hfill \emph{Sep. 2010 - Jul. 2014}
+	\begin{asparaitem}[$\circ$]
+		\additemindent
+		\item Bachelor of Science
+		\item Computer Science, Member of ``Top Notch Plan'', G.P.A. 4.13/5
+	\end{asparaitem}
+%=======================================================================================
+
+
+%=======================================================================================
+\parsp
+\section{PUBLICATION AND CONTEST}
+	\begin{asparaitem}
+		\item En-hui Yang, Jingyun Bian, 
+		``Bipartite Grammar-Based Representations of Large Sparse Binary Matrices: Framework and Transforms'', 
+		\emph{The International Symposium on Information Theory and Its Applications(ISITA)}, 
+		Monterey, California, 
+		2016.
+
+		\vspace{0.3em}
+		\item ACM/ICPC Asian Regional Silver Medal: 2013 Changsha
+		\item $4$ ACM/ICPC Asian Regional Bronze Medals: 2012 Changchun, 2012 Jinhua, 2011 Fuzhou, and 2011 Beijing.
+	\end{asparaitem}
+%=======================================================================================
+
+
+%=======================================================================================
+\parsp
+\section{PROJECT}
+\begin{asparaenum}
+	\item Bipartite Grammar-Based Representations of Large Sparse Binary Matrices, \emph{Master Dissertation Project}, 2015 - 2016
+
+	\item Implementation of Context-dependent $2$-D Multi-level Pattern Matching Code, Course Project of \emph{Data Compression}, Winter 2015
+
+	\item Security Analysis and Randomness Test for Lightweight Block Cipher Simon, Course Project of \emph{Computer Network Security}, Winter 2015
+
+	\item Emotion Analysis of Tweets, Course Project of \emph{Topics in Computer Software}, Fall 2014
+		\begin{asparaitem}
+			\additemindent
+			\item Natrual Language Processing Tool(NLTK) in Python and PCA were used to preprocess Tweets.
+			\item SVM, C$4.5$, Bayes and Neural Network were implemented to compare classification accuracy.
+		\end{asparaitem}
+
+	\item GRE Vocabulary Memorizing System, \emph{Bachelor Dissertation Project}, 2014
+		\begin{asparaitem}
+			\additemindent
+			\item XAMPP was used to support the website.
+			\item Bootstrap was used to make the website mobile friendly.
+			\item Used API to combine my website with Wechat's public platform so that in-App access is possible.
+		\end{asparaitem}
+
+	\item Online-judge Based Fault Localization System, \emph{Innovation Project of NJU}, 2013
+		\begin{asparaitem}
+			\additemindent
+			\item Built an online-judge website as test oracle. 
+			\item Statistic methods are applied to derive the suspision of each statement. 
+			\item Suspisions were changed according to user's feedback. 
+		\end{asparaitem}
+
+	\item Simple graphic system, Course Project of \emph{Introduction to graphics}, 2013
+		\begin{asparaitem}
+			\additemindent
+			\item Implemented basic graphic functions using OpenGL in C++ and built a simple GUI. 
+		\end{asparaitem}
+
+	
+ 	\item User behavior classification based on cell-phone sensor data, Course Project of \emph{Data Mining}, 2013
+ 		\begin{asparaitem}
+			\additemindent
+			\item WEKA was used to do data cleaning and classification. 
+		\end{asparaitem}
+
+\end{asparaenum}
+
+%=======================================================================================
+\parsp
+\section{EXTRACURRICULAR ACTIVITIES}
+\begin{asparaitem}
+\item Minister of academic section in student union of CS department in NJU
+\item Co-funder of Alibaba Technology Association of Nanjing University
+\end{asparaitem}
+%=======================================================================================
+
+\end{resume}
+\end{document}
