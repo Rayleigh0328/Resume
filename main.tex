@@ -1,146 +1,132 @@
-% LaTeX file for resume 
-% This file uses the resume document class (res.cls)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass{res} 
-\usepackage{hyperref}
-\usepackage{multicol}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+\documentclass{resume} % Use the custom resume.cls style
 
-\begin{document} 
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Jingyun Bian} % Your name
+\address{Unit 1902, 4070 Confederation Pkwy, Mississauga, ON, L5B 0E9} % Your address
+\address{519-721-7328 \\ rayleigh0328@gmail.com } % Your phone number and email
+%TODO: github
+\begin{document}
 
-\name{Jingyun Bian\\[12pt]}     % the \\[12pt] adds a blank
-				        % line after name      
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\address{\bf ADDRESS\\201, 18 James Street\\Waterloo, ON N2J 2S9\\}
-%\address{\bf Contact\\ cell: (519) 721-7328 \\ email: rayleigh0328@gmail.com\\}
-\address{\bf CONTACT\\ Cell: (519) 721 - 7328 \\ \href{mailto:rayleigh0328@gmail.com}{rayleigh0328@gmail.com} \\}
+\begin{rSection}{Education}
 
-
-\begin{resume}
-
-\section{JOB OBJECTIVE}          
-    A fulltime position that will use my computer skills.          
- 
-\section{EDUCATION}
-  \textbf{University of Waterloo, Waterloo, ON} \hfill \emph{Sep. 2014 - Now}
-  \begin{itemize}
-    \item Master of Applied Science (Expected graduation in Sep. 2016) 
-    \item Electrical and Computer Engineering, G.P.A. 86.6/100
-    \item Concentrate on Communications and Information Systems
-  \end{itemize}
-
-  \textbf{Nanjing University, Nanjing, Jiangsu, China} \hfill \emph{Sep. 2010 - Jul. 2014}
-  \begin{itemize}
-    \item Bachelor of Science
-    \item Computer Science, Member of ``Peak Plan'', G.P.A. 4.13/5
-  \end{itemize}          
-
-\section{RELEVANT PROJECT AND PUBLICATION}
-  \begin{enumerate}
-    \item \textbf{Context-free Bipartite Grammar representation of sparse binary matrix} \hfill \emph{in UW}
-    \begin{itemize}
-      \item Define the new concept ``Context-free Bipartite grammar'' to represent binary matrix and proposed grammar transform ``Iterative Pairing Transform''.
-      \item En-hui Yang, Jingyun Bian, ``Bipartite Grammar-Based Representations of Large Sparse Binary Matrices: Framework and Transforms'', ISITA, Monterey, California, 2016. 
-    \end{itemize}
-
-    \item \textbf{Online-judge based fault localization} \hfill \emph{innovation project in NJU}
-    \begin{itemize}
-      \item Build an online-judge website as test oracle
-      \item Use data flow analysis to statistically localize faults in program
-      \item Adjust the suspicions of statement according to user feedback.
-    \end{itemize}
-
-  \end{enumerate}
+{\bf University of Waterloo, ON, Canada} \hfill {\em Sep. 2014 - Oct. 2016} 
+\\ Master of Applied Science
+\\ Department of Electrical and Computer Engineering \hfill {GPA 86.6/100}\\
+\\{\bf Nanjing University, Jiangsu, China} \hfill {\em Sep. 2010 - Jun. 2014} 
+\\ Bachelor of Science
+\\ Department of Computer Science \hfill { GPA 4.13/5 }
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+\end{rSection}
 
 
-\section{PROGRAMMING LANGUAGE AND TOOLS}
-  \begin{multicols}{3}
-    \begin{enumerate}
-      \item C/C++, Java, Pascal
-      \item Python, PHP, JavaScript
-      \item Matlab
-      \item Shell Script, Makefile
-      \item XML, HTML, CSS
-      \item Windows, Linux
-      \item Git, Perforce
-      \item Eclipse, Visual Studio
-    \end{enumerate}
-  \end{multicols}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-\section{CONTESTS}
-\begin{itemize}
-\item 2013 ACM/ICPC Asia Changsha Regional Contest: Silver Medal
-\item 2012 ACM/ICPC Asia Changchun and Jinhua Regional Contest: Bronze Medal
-\item 2011 ACM/ICPC Asia Fuzhou and Beijing Regional Contest: Bronze Medal
-\end{itemize}
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{\textbf{Centro}, ON, Canada}{June 2016}{Software Engineer}{}
+\item On-site internship under this leading construction company. Learned and implemented various aspects such as quantity estimation, labour management and safety precautions.
+\end{rSubsection}
 
 
-\section{HONORS AND AWARDS}
-\begin{itemize}
-\item University of Waterloo Graduate Scholarship (Winter 2015 in UW)
-\item International Masters Student Award (Every term in UW)
-\item Peak Plan Scholarship (2012, 2013 in NJU)
-\end{itemize}
+\end{rSection}
 
-\section{EXTRACURRICULAR ACTIVITIES}
-\begin{itemize}
-\item Minister of academic section in student union of CS department in NJU
-\item Co-funder of Alibaba Technology Association of Nanjing University
-\end{itemize}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Carrier Objective}
+ To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
+\end{rSection}
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+{\bf Dynamic Analysis of Buckling Restrained Braces}
+\\The project aims at designing and fabrication of two Buckling Restrained Braces which were analyzed under dynamic loading. As alternative for conventional braces, these BRBs are also beneficial for seismic retro-fitting in RCC and steel structures.\\
+\\{\bf Indirect Model Analysis of Structures}\\
+Presented a Seminar on Indirect Model Analysis, explaining the method to compute response of Prototype from the Influence lines obtained from Model. Use of Muller Breslau Principle in Indirect Model Analysis and the Similitude between prototype and  model.\\
 
-% \section{EXPERIENCE}
-%    \vspace{-0.1in}	
-%    \begin{tabbing}
-%    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-%     {\bf Telefund Associate} \>Rensselaer Fund     \>Fall 1987-Present\\
-%                              \>Troy, NY
-%    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-%     Generated alumni and parent support to reduce tuition,          
-%     increase scholarship and financial aid funds; averaging 80          
-%     percent pledge rate. Top three percent associate.
-%    \begin{tabbing}
-%    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-%     {\bf Team Programmer} \>Group W Cable, Westinghouse Corp \> ~~~~~~ Summer 1987\\
-%                           \>Mahway, NJ
-%    \end{tabbing}\vspace{-20pt}
-%     Liaison between accounting department and controller,          
-%     provided assistance with invoice liabilities after          
-%     divestiture of Group W Cable by Westinghouse.
-%    \begin{tabbing}%
-%    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions          
-%    {\bf Sales Assistant}  \>AP Technical Sales Inc. \> Summers  1985-86\\
-%                           \>Palisades Park, NJ
-%    \end{tabbing}\vspace{-20pt}
-%     Duties included telemarketing, data entry, and invoicing.          
-%     Successfully converted catalog inquiries to sales          
-%     opportunities by telemarketing program.          
+% \\{\bf Microtunneling}\\
+Presented a seminar on Micro Tunneling, explaining its advantages over conventional method of drainage laying systems. Analysis considering direct and indirect cost of micro tunneling was also discussed.
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Modeling and Analysis \ & AutoCad, Revit, StaadPro \\
+Software \& Tools & MS Office, Latex \\
+\end{tabular}
+
+\end{rSection}
 
 
-% \section{COMPUTER SKILLS}          
-%     Extensive knowledge of hardware and software for IBM PC and          
-%     MTS. \\         
-%     Proficient programming skills in COBOL, WATFIV (FORTRAN), and          
-%     BASIC.          
- 
- 
-% \section{HONORS AND AWARDS}          
-%     Epsilon Delta Sigma: Honorary Management Society at          
-%     Rensselaer    \\      
-%     Dean's List of Distinguished Students: Fall 1986-Spring 1988  \\        
-%     National Honor Society: Northern Highlands High School  \\        
-%     Creative Essay Award: Northern Highlands High School  \\        
-%     Meritorious Action Life Saving Award: Boy Scouts of America          
- 
-% \section{EXTRACURRICULAR ACTIVITIES}          
-%     Epsilon Delta Sigma Public Relations Committee \\         
-%     Rensselaer Ski Club     \\     
-%     Bergen County Task Force Student Liaison 1986  \\        
-%     LEADD (Legislators and Educators Against Drunk Driving) Chairman
-%      1985-86  \\        
-%     Youth Group - Temple Beth Or Activities Chairman 1985-86          
- 
-\end{resume}
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Achievements} 
+ Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
+\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+\end{rSection}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+% Extra Curricular
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+\item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
+\item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
+\item Winner of Inter Departmental Football Competition 2015.
+\item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
+\item Worked for a start-up company Named OUST as a Regional Marketing Manager
+%\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
+ %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
+ %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
+ %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
+
+\end{rSection}
+
+\begin{rSection}{Personal Traits}
+\item Highly motivated and eager to learn new things.
+\item Strong motivational and leadership skills.
+\item Ability to work as an individual as well as in group.
+\end{rSection}
 \end{document}
+
