@@ -26,10 +26,37 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Jingyun Bian} % Your name
-\address{Unit 1902, 4070 Confederation Pkwy, Mississauga, ON, L5B 0E9} % Your address
+% \address{Unit 1902, 4070 Confederation Pkwy, Mississauga, ON, L5B 0E9} % Your address
 \address{519-721-7328 \\ rayleigh0328@gmail.com } % Your phone number and email
 %TODO: github
 \begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Carrier Objective}
+A software engineer with excellent academic records, 
+strong algorithm knowledge and problem solving skills, 
+working knowledge of web-apps and Hadoop ecosystem, 
+seek to work as a Software Engineer in a reputable organization 
+which provides the opportunity to work on client facing apps 
+to improve my skills and knowledge as well as to grow along with the organization's objectives.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Centro, ON, Canada}{\em{Nov. 2016 - Present}}{Software Engineer}{}
+\item Designed and implemented testing frameworks and tools for multiple projects among different teams.
+Greatly reduced the amount of testing work that needs to be done manually and enhanced the reliability of the testing.
+Developed monitoring tool to generate daily report about data consistency. 
+\end{rSubsection}
+
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -38,11 +65,11 @@
 \begin{rSection}{Education}
 
 {\bf University of Waterloo, ON, Canada} \hfill {\em Sep. 2014 - Oct. 2016} 
-\\ Master of Applied Science
+\\ Master of Applied Science, supervised by Prof. En-hui Yang
 \\ Department of Electrical and Computer Engineering \hfill {GPA 86.6/100}\\
 \\{\bf Nanjing University, Jiangsu, China} \hfill {\em Sep. 2010 - Jun. 2014} 
 \\ Bachelor of Science
-\\ Department of Computer Science \hfill { GPA 4.13/5 }
+\\ Department of Computer Science, `Top Notch Plan' \hfill { GPA 4.13/5 }
 %Minor in Linguistics \smallskip \\
 %Member of Eta Kappa Nu \\
 %Member of Upsilon Pi Epsilon \\
@@ -50,78 +77,117 @@
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Work Experience}
-
-\begin{rSubsection}{\textbf{Centro}, ON, Canada}{June 2016}{Software Engineer}{}
-\item On-site internship under this leading construction company. Learned and implemented various aspects such as quantity estimation, labour management and safety precautions.
-\end{rSubsection}
-
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Carrier Objective}
- To work for an organization which provides me the opportunity to improve my skills and knowledge to grow along with the organization objective.
-\end{rSection}
-%--------------------------------------------------------------------------------
-%    Projects And Seminars
-%-----------------------------------------------------------------------------------------------
-\begin{rSection}{Projects}
-{\bf Dynamic Analysis of Buckling Restrained Braces}
-\\The project aims at designing and fabrication of two Buckling Restrained Braces which were analyzed under dynamic loading. As alternative for conventional braces, these BRBs are also beneficial for seismic retro-fitting in RCC and steel structures.\\
-\\{\bf Indirect Model Analysis of Structures}\\
-Presented a Seminar on Indirect Model Analysis, explaining the method to compute response of Prototype from the Influence lines obtained from Model. Use of Muller Breslau Principle in Indirect Model Analysis and the Similitude between prototype and  model.\\
-
-% \\{\bf Microtunneling}\\
-Presented a seminar on Micro Tunneling, explaining its advantages over conventional method of drainage laying systems. Analysis considering direct and indirect cost of micro tunneling was also discussed.
-
-\end{rSection}
-%----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Modeling and Analysis \ & AutoCad, Revit, StaadPro \\
-Software \& Tools & MS Office, Latex \\
+Programming language \ & 	Java, C/C++, Python, PHP, Matlab, Javascript  \\
+Software \& Tools & 		Docker, Maven, Bash, Git, Vim, Makefile, \LaTeX\\
+& 							Jenkins, Redis, Elasticsearch, HTML, CSS, SQL, Bootstrap\\
+& 							Hadoop(Oozie, Yarn, spark, Zookeeper, Kafka, Impala, Hive, Hdfs)\\
+%  .
 \end{tabular}
 
 \end{rSection}
 
-
-
-
-%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+% Academic achievements section
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Academic Achievements} 
- Runners up in B.G.Shirke Vidyarthi Competition for Innovative Project organized by Pune Construction Engineering Research Foundation in January 2018
-\item Won First Prize in Model Making Competition Organized by Symbiosis Institute of Technology, Pune.
+\begin{itemize}
+
+\item En-hui Yang, Jingyun Bian, 
+\textbf{``Bipartite Grammar-Based Representations of Large Sparse Binary Matrices: Framework and Transforms''},
+\emph{The International Symposium on Information Theory and Its Applications(ISITA), Monterey}, California, 2016
+
+\item Silver Medal obtained in \emph{ACM-ICPC (Association for Computing Machinery - International Collegiate Programming Contest) Asian Regional}, Changsha, 2013
+
+\item Bronze Medal obtained in \emph{ACM/ICPC Asian Regional}, Changchun, 2012
+\item Bronze Medal obtained in \emph{ACM/ICPC Asian Regional}, Jinhua, 2012
+\item Bronze Medal obtained in \emph{ACM/ICPC Asian Regional}, Fuzhou, 2011
+\item Bronze Medal obtained in \emph{ACM/ICPC Asian Regional}, Beijing, 2011
+
+\item Frist Prize winner with guaranteed admission to Nanjing University in \emph{NOIP (National Olympiad in Informatics in Provinces)} Jiangsu, 2009. 
+\item Frist Prize winner in \emph{NOIP} Jiangsu, 2008.
+\end{itemize}
 \end{rSection}
 
+
+
+
+
+
+
+
 \newpage
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+
+{\bf BI Discrepancy Finder}\\
+This Java project aims at a centralized end-to-end monitoring tool for multiple BDBI data pipelines.
+The project is scheduled as a oozie coordinator job that runs once a day at off-peak hours. 
+It checks the production data against its source 
+and then send out a summary email or an alert email with detailed information based on if any inconsistency is found.
+This tool deals with data in different formats and from different sources. For example, manually written csv files, data stored in Mysql or Postgres by API, etc.
+The logics of each data pipeline is mostly re-implemented in this monitoring tool to provide a ground truth to check against.      
+
+{\bf BD Discrepancy Finder}\\
+This project provides a end-to-end monitoring tool for the BD data pipeline 
+which process huge amount of auction won, event as well as other supporting data to generate user reports.
+This tool reads data from Kafka and compare with data in Impala.
+Due to the size of data and the cost to process them, 
+this monitoring is based on stats aggregation and null column check. 
+The app is scheduled as a oozie coordinator job that runs once a day at off-peak hours. 
+It will generate summary or alert email based on if any stats discrepancy is found.
+
+{\bf Rule-Based-Optimization Auto-Tester}\\
+This project aims at making sure rule-based-optimization works properly under all possible scenarios. 
+RBO is a complicated app that tunes campaigns' bidding strategies based on the rule set. 
+To trigger a specific scenarios, the tester populates all database tables that possibly affect the job's behavior. 
+Over 1500 automated test cases are added in this tester to have as much coverage as possible.  
+
+{\bf Grammar Based Coding}\\
+This project gives a way to efficiently represent a sparse matrix 
+while maintaining the random access capability.
+It first represents a sparse matrix as a bipartite graph, 
+then this graph is further represented by a special context-free grammar defined on bipartite graphs.
+By encoding the grammar, the compression can be achieved.
+This project also includes comparison between GBC, dimension coding with scanning and other 
+well-known sparse matrix representation methods like COO, CRS.
+A research paper is published based on this project.\\ 
+\emph{https://github.com/Rayleigh0328/GBC} \ \ 
+\emph{https://github.com/Rayleigh0328/dim}
+
+{\bf Emotion Analysis of Tweets}\\% Course Project of Topics in Computer Software, Fall 2014
+This project produces classifiers to categorize user's emotion based on their tweets.
+After data cleaning, Python NLTK package and PCA are used to further preprocess the data. 
+Then different machine learning algorithms are applied, such as 
+SVM, C4.5, Bayes and Neural Network, to produce classifiers.
+The final result is then generated based on voting of these classifiers.
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
 % Extra Curricular
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Extra-Cirrucular} \itemsep -3pt
-\item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
-\item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
-\item Winner of Inter Departmental Football Competition 2015.
-\item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
-\item Worked for a start-up company Named OUST as a Regional Marketing Manager
+% \begin{rSection}{Extra-Cirrucular} \itemsep -3pt
+% \item Co-Organized “ Nirmitee 2017” - a National Symposium of Civil Department of MIT, Pune
+% \item Attended a workshop on Autodesk Revit at IIT Bombay in 2014.
+% \item Winner of Inter Departmental Football Competition 2015.
+% \item Member of the  Rotaract Club Of Pune Pride from 2014 to 2017.
+% \item Worked for a start-up company Named OUST as a Regional Marketing Manager
 %\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
  %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
  %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
  %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
 
-\end{rSection}
+% \end{rSection}
 
 \begin{rSection}{Personal Traits}
 \item Highly motivated and eager to learn new things.
